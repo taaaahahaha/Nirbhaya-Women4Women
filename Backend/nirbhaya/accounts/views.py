@@ -72,12 +72,16 @@ def logout(request):
 def signup(request):
     
     data = request.POST
-    print(data)
+    print(data,'main')
     username = data['username']
     password = data['password']
     name = data['name']
     dob = data['dob']
     gender = data['gender']
+
+    print(data['data'], type(data['data']))
+    sos = json.loads(data['data'])
+    print("t")
 
     if User.objects.filter(username=username).exists():
         data = {
@@ -89,6 +93,26 @@ def signup(request):
 
     user = User.objects.create_user(username=username,password=password)
     user.save()
+
+    print('sos',sos)
+    if len(sos[0]) == 1:
+        ins = SOS.objects.create(
+            user=user,
+            name=sos[0],
+            mobile_number=sos[1],
+            relation=sos[2]
+        )
+        ins.save()
+    else:
+        for i in sos:  #
+            print('i',i)
+            ins = SOS.objects.create(
+                user=user,
+                name=i[0],
+                mobile_number=i[1],
+                relation=i[2]
+            )
+            ins.save()
 
     client = userProfile.objects.create(
         user=user,
