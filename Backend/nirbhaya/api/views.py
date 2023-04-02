@@ -177,8 +177,12 @@ def sos(request):
     user = request.user
     ins = SOS.objects.filter(user=user)
     ser = SOSSerializer2(ins, many=True)
-    print(ser.data)
-    return Response(ser.data)
+    ans = []
+    for i in ser.data:
+        ans.append(i['mobile_number'])
+    print(ans)
+    
+    return Response(ans)
 
 @api_view(["GET"])
 @authentication_classes([TokenAuthentication])
@@ -193,7 +197,8 @@ def safespaces(request):
 @permission_classes([AllowAny])
 def SPT(request):
     
-    main()
+    res = main()
+    print(res)
     return Response("hehEHeeu")
 
 @api_view(["GET"])

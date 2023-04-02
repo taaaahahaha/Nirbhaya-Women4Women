@@ -7,6 +7,7 @@ urlpatterns = [
     path('qr/',views.qr,name='qr'),
     path('reports/',views.reports, name="reports"),
     path('sos/',views.sos, name="sos"),
+    path('spt/',views.SPT, name="spt"),
     path('safespaces/',views.safespaces, name="safespaces"),
     path('profile/',views.profile, name="profile"),
     
