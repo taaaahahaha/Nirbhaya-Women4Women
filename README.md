@@ -22,3 +22,28 @@ The app includes an SOS feature that sends an alert to the user's designated eme
 
 5. *Reporting harassment and a forum with all reports*:<br>
 The app includes a feature that allows users to report harassment or unsafe situations they encounter while traveling. These reports are aggregated in a forum that can be accessed by other users, allowing them to stay informed about potential dangers in the area and take precautions to stay safe.
+
+### Flowchart
+![alt text](https://github.com/taaaahahaha/Nirbhaya-Women4Women/blob/main/images/flowchart.jfif)
+
+### Techstack
+1. Flutter
+2. Django
+3. Firebase
+4. Pytorch
+5. Transformers
+
+### Screenshots
+#### Screen 1
+![alt text](https://github.com/taaaahahaha/Nirbhaya-Women4Women/blob/main/images/image1.png)
+#### Screen 2
+![alt text](https://github.com/taaaahahaha/Nirbhaya-Women4Women/blob/main/images/image2.png)
+#### Screen 3
+![alt text](https://github.com/taaaahahaha/Nirbhaya-Women4Women/blob/main/images/image3.png)
+#### Screen 4
+![alt text](https://github.com/taaaahahaha/Nirbhaya-Women4Women/blob/main/images/image4.png)
+#### Screen 5
+![alt text](https://github.com/taaaahahaha/Nirbhaya-Women4Women/blob/main/images/image5.png)
+
+
+
